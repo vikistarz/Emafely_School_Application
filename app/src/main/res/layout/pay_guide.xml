@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="View.PayGuide">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/arrow_back"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="34dp"
+                    android:background="@drawable/baseline_arrow_back_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_width="185dp"
+                    android:layout_height="185dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/girl_circle"/>
+
+                <LinearLayout
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pay Guide"
+                        android:textColor="#304E7C"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="70dp"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="64dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/pay_guide_line"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="195dp"
+                android:background="@drawable/white_pay_guide"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Creche"
+                    android:textColor="#304E7C"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/makes_heir_not_man"
+                    android:textColor="#304E7C"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp" />
+                
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_creche"
+                    android:layout_width="160dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Apply Now"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pay_guide_blue_button"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="195dp"
+                android:background="@drawable/blue_pay_guide"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="pre-nursery"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/makes_heir_not_man"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_pre_nursery"
+                    android:layout_width="160dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center"
+                    android:text="Apply Now"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:background="@drawable/pay_guide_white_button"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="195dp"
+                android:background="@drawable/blue_pay_guide"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="nursery"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/makes_heir_not_man"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_nursery"
+                    android:layout_width="160dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center"
+                    android:text="Apply Now"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:background="@drawable/pay_guide_white_button"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="195dp"
+                android:background="@drawable/white_pay_guide"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="primary"
+                    android:textColor="#304E7C"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Haeredum deus facit non homo meaning – God makes heir not man."
+                    android:textColor="#304E7C"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_primary"
+                    android:layout_width="160dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Apply Now"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pay_guide_blue_button"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Copyright 2023 | All Rights Reserved"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textSize="7sp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

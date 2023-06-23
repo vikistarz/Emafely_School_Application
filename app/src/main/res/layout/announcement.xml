@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="View.Announcement">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:background="#F3EFEF"
+        android:layout_height="370dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/arrow_back"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="34dp"
+                android:background="@drawable/baseline_arrow_back_24" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/white_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="13dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Announcement"
+                android:textAllCaps="true"
+                android:textColor="#45608C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We keep you updated"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/speaker"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="13dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/white_layout"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1" />
+
+
+        <View
+            android:layout_width="301dp"
+            android:layout_height="2dp"
+            android:background="#D3D3D3" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1" />
+
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="vertical"
+        android:background="#45608C"
+        android:layout_alignParentBottom="true"/>
+
+
+<LinearLayout
+    android:id="@+id/announcement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/line"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="415dp"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/announcement_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11th, May, 2023"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textColor="#45608C"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dear Parents"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:textAllCaps="false"
+            android:textColor="#45608C"
+            android:textSize="16.5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is to inform you that we’d be having our very first PTA meeting for the term, which would be held onsite(school environment). parents please lets clear our schedule to attend. Other information would be passed across when we meet. "
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="23dp"
+            android:textAllCaps="false"
+            android:textColor="#192944"
+            android:textSize="16.5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE: 18th May 2023."
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false"
+            android:textColor="#192944"
+            android:textSize="16.5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regards"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="#192944"
+            android:textSize="16.5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr"
+                android:layout_marginStart="20dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#192944"
+                android:textSize="16.5sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emafely Treasure School"
+                android:textAllCaps="false"
+                android:layout_marginStart="5dp"
+                android:textColor="#192944"
+                android:textSize="16.5sp" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
+    <View
+        android:layout_below="@id/announcement"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1" />
+
+
+
+</RelativeLayout>
+</ScrollView>
