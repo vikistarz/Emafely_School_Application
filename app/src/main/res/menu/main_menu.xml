@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#3B3F4B">
+
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/baseline_dashboard_24"
+        android:title="Dashboard"/>
+
+    <item
+        android:id="@+id/nav_announcement"
+        android:icon="@drawable/baseline_announcement_24"
+        android:title="Announcement"/>
+
+    <item
+        android:id="@+id/nav_retreat"
+        android:icon="@drawable/baseline_family_restroom_24"
+        android:title="Retreat"/>
+
+    <item
+        android:id="@+id/nav_admission"
+        android:icon="@drawable/baseline_beenhere_24"
+        android:title="Admission"/>
+
+
+</group>
+
+
+    <item android:title="For Us">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/baseline_contacts_24"
+                    android:title="Contacts"/>
+
+
+                <item
+                    android:id="@+id/nav_support"
+                    android:icon="@drawable/baseline_contact_support_24"
+                    android:title="Support"/>
+
+                <item
+                    android:id="@+id/nav_log_out"
+                    android:icon="@drawable/baseline_logout_24"
+                    android:title="Logout"/>
+
+
+
+
+            </group>
+        </menu>
+    </item>
+</menu>
+

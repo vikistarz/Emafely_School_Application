@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="View.NewsEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:background="#304E7C"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/arrow_back"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="25dp"
+                        android:background="@drawable/baseline_arrow_back_white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1.8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="news/events"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+
+                    <View
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="34dp"
+                        android:background="@drawable/news" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1" />
+
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="285dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/news_layout"
+                        android:orientation="vertical">
+
+                        <com.smarteist.autoimageslider.SliderView
+                            android:id="@+id/slider"
+                            android:layout_width="300dp"
+                            android:layout_height="175dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            app:sliderAnimationDuration="600"
+                            app:sliderAutoCycleDirection="back_and_forth"
+                            app:sliderIndicatorAnimationDuration="600"
+                            app:sliderIndicatorEnabled="true"
+                            app:sliderIndicatorGravity="center_horizontal|bottom"
+                            app:sliderIndicatorMargin="25dp"
+                            app:sliderIndicatorOrientation="horizontal"
+                            app:sliderIndicatorPadding="5dp"
+                            app:sliderIndicatorRadius="2dp"
+                            app:sliderIndicatorSelectedColor="#5A5A5A"
+                            app:sliderIndicatorUnselectedColor="#FFF"
+                            app:sliderScrollTimeInSec="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:text="Help your child excel in school"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+
+                            <View
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:background="@drawable/baseline_calendar_month_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:gravity="center"
+                                android:text="9 may, 2022"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <View
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginStart="25dp"
+                                android:background="@drawable/clock" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:gravity="center"
+                                android:text="7:00 am  GMT +1"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="top news"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="|"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="sports"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="|"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="education"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="|"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="politics"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="9sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
