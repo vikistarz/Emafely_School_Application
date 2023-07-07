@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Emafely App</string>
+    <string name="my_preference">shared preference</string>
     <string name="nav_open">Open</string>
+    <string name="instructions_activation_deactivation">You can use this page to deactivate your account if it is currently active, or to reactivate your account if you previously deactivated it. in order to reactivate your account, you will need to verify your email address and reset your password.</string>
     <string name="nav_close">Close</string>
     <string name="makes_heir_not_man">Haeredum deus facit non homo meaning – God makes heir not man.</string>
 </resources>

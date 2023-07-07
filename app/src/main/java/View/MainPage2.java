@@ -160,12 +160,10 @@ public class MainPage2 extends AppCompatActivity {
         errolNow();
         logIn();
         youtubeLayout();
-        navDrawerCancel();
+
     }
 
-    private void navDrawerCancel() {
-        navDrawerCancel.cancelLongPress();
-    }
+
 
     private void youtubeLayout() {
 

@@ -18,17 +18,25 @@
         android:supportsRtl="true"
         tools:targetApi="31">
         <activity
+            android:name="View.PaymentDetails"
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="View.ForgetPassword"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name="View.AccountInformation"
             android:exported="false"
-            android:theme="@style/Theme.EmafelyApp"/>
+            android:theme="@style/Theme.EmafelyApp" />
         <activity
             android:name="View.PaymentSummary"
             android:exported="false"
-            android:theme="@style/Theme.EmafelyApp"/>
+            android:theme="@style/Theme.EmafelyApp" />
         <activity
             android:name="View.MakePayment2"
             android:exported="false"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="View.MakePayment1"
             android:exported="false"
@@ -52,7 +60,7 @@
         <activity
             android:name="View.NewsEvent"
             android:exported="false"
-            android:theme="@style/Theme.EmafelyApp" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name="View.StudentDashboard"
             android:exported="false"
@@ -96,6 +104,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.emafelyapp.fileProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 </manifest>

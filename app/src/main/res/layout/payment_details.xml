@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="View.PaymentDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#45608C"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/arrow_back"
+                        android:layout_width="25dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="34dp"
+                        android:background="@drawable/baseline_arrow_back_white" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_parent_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Kindly make your payment below"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#D3D3D3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Total Fees"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fee_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1" />
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/payment_layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Amount you intend to pay"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#45608C"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_fees"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="34dp"
+                android:textColor="@color/black"
+                android:hint=""
+                android:text="  .00"
+                android:paddingEnd="20dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:textColorHint="#45608C"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@drawable/payment_layout"/>
+
+
+
+            <CheckBox
+                android:id="@+id/terms_condition_box"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:text=" I agree to the Terms and Conditions."
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_make_payment"
+                android:layout_width="335dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/blue_button_background"
+                android:textAllCaps="false"
+                android:text="Make Payment" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

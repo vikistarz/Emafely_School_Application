@@ -86,7 +86,7 @@
 
 
                     <LinearLayout
-                        android:layout_width="350dp"
+                        android:layout_width="300dp"
                         android:layout_height="285dp"
                         android:layout_marginTop="15dp"
                         android:background="@drawable/news_layout"
@@ -94,11 +94,10 @@
 
                         <com.smarteist.autoimageslider.SliderView
                             android:id="@+id/slider"
-                            android:layout_width="300dp"
-                            android:layout_height="175dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
                             android:layout_centerInParent="true"
                             android:layout_gravity="center"
-                            android:layout_marginTop="25dp"
                             app:sliderAnimationDuration="600"
                             app:sliderAutoCycleDirection="back_and_forth"
                             app:sliderIndicatorAnimationDuration="600"
@@ -141,11 +140,11 @@
                                 android:background="@drawable/baseline_calendar_month_blue" />
 
                             <TextView
+                                android:id="@+id/tv_current_date"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="7dp"
-                                android:gravity="center"
-                                android:text="9 may, 2022"
+                                android:text=""
                                 android:textAllCaps="false"
                                 android:textColor="@color/black"
                                 android:textSize="13sp" />
@@ -157,11 +156,12 @@
                                 android:background="@drawable/clock" />
 
                             <TextView
+                                android:id="@+id/tv_current_time"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="7dp"
                                 android:gravity="center"
-                                android:text="7:00 am  GMT +1"
+                                android:text=""
                                 android:textAllCaps="false"
                                 android:textColor="@color/black"
                                 android:textSize="13sp" />

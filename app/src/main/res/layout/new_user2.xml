@@ -87,7 +87,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textAllCaps="false"
-            android:text="D.O.B"/>
+            android:text="Child D.O.B"/>
 
 
         <EditText
@@ -127,6 +127,7 @@
             android:background="@drawable/blue_edittext_background"
             android:inputType="number|phone"
             android:textSize="16sp"
+            android:maxEms="11"
             android:textStyle="bold"
             android:paddingStart="15dp"
             android:textColor="@color/white" />
@@ -192,23 +193,45 @@
 
 
         <LinearLayout
-            android:id="@+id/layout_next"
-            android:layout_width="130dp"
-            android:layout_height="55dp"
-            android:layout_gravity="end"
-            android:layout_marginEnd="37dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@drawable/white_button_background"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <View
-                android:layout_width="35dp"
-                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/arrow_group" />
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_next"
+                android:layout_width="130dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="37dp"
+                android:background="@drawable/white_button_background"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/arrow_group" />
+
+            </LinearLayout>
+
+
 
         </LinearLayout>
+
 
         <View
             android:layout_width="35dp"

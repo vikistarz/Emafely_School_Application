@@ -2,19 +2,26 @@ package View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.emafelyapp.R;
+
+import Utility.AppConstant;
 
 public class MakePayment2 extends AppCompatActivity {
 
     private EditText cardNumberEditText, expiryDateEditText, ccvEditText;
     private View backArrow;
     private Button payButton;
+
+    private TextView userEmail, feeDetail, feeAmount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +32,30 @@ public class MakePayment2 extends AppCompatActivity {
         inItListener();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences mySharedPreference = getSharedPreferences(getString(R.string.my_preference), Context.MODE_PRIVATE);
+        String userEmailAddress  = mySharedPreference.getString(AppConstant.emailAddress, " ");
+        String feesCost  = mySharedPreference.getString(AppConstant.feesPaid, " ");
+        String paymentDetails = mySharedPreference.getString(AppConstant.paymentDetails, " ");
+
+        userEmail.setText(userEmailAddress);
+        payButton.setText("Pay " + "NGN " + feesCost);
+        feeAmount.setText(feesCost);
+        feeDetail.setText(paymentDetails);
+    }
+
     public void inItView() {
+        userEmail = findViewById(R.id.tv_email_address);
         cardNumberEditText = findViewById(R.id.et_card_number);
         expiryDateEditText = findViewById(R.id.et_card_date);
         ccvEditText = findViewById(R.id.et_card_cvv);
+        feeDetail = findViewById(R.id.tv_fee_details);
+        feeAmount = findViewById(R.id.tv_fee_amount);
         payButton = findViewById(R.id.btn_pay);
         backArrow = findViewById(R.id.arrow_back);
+
     }
     public void inItListener() {
         backArrow();

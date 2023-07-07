@@ -18,10 +18,12 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
 
       private Context myContext;
     private ArrayList<EventsModel> myEventsModel;
+    private EventRecyclerInterface myEventInterface;
 
-    public EventsAdapter(Context myContext, ArrayList<EventsModel> myEventsModel) {
+    public EventsAdapter(Context myContext, ArrayList<EventsModel> myEventsModel, EventRecyclerInterface myEventInterface) {
         this.myContext = myContext;
         this.myEventsModel = myEventsModel;
+        this.myEventInterface = (EventRecyclerInterface) myContext;
     }
 
     @NonNull
@@ -38,6 +40,9 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
         holder.myEventImages.setImageResource(myEventModelList.getImages());
         holder.eventDescription.setText(myEventModelList.getDescription());
 
+        holder.itemView.setOnClickListener(View ->
+                myEventInterface.handleEventClick(myEventsModel.get(position)));
+
     }
 
     @Override
@@ -45,7 +50,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
         return myEventsModel.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private ImageView myEventImages;
         private TextView eventDescription;
 
@@ -54,6 +59,13 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
 
             myEventImages = itemView.findViewById(R.id.event_images);
             eventDescription = itemView.findViewById(R.id.tv_event_description);
+
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            myEventInterface.handleEventClick(myEventsModel.get(getAdapterPosition()));
         }
     }
 }

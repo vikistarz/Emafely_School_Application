@@ -115,6 +115,7 @@
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:paddingStart="15dp"
                 android:inputType="textPassword"
                 android:textSize="16sp"
                 android:textColor="@color/white"
@@ -142,7 +143,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="invisible"/>
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
 
 
 
@@ -152,7 +154,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="37dp"
         android:layout_marginEnd="37dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:textSize="15sp"
         android:gravity="center"
         android:textColor="#45608C"
@@ -177,15 +179,15 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:layout_marginTop="25dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="15dp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textAllCaps="false"
-                android:text="Forget Password?"/>
+                android:text="Don't have an account?"/>
 
             <TextView
                 android:id="@+id/tv_sign_up"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:layout_marginTop="25dp"

@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -20,6 +22,8 @@ import android.widget.TextView;
 
 import com.example.emafelyapp.R;
 import com.google.android.material.navigation.NavigationView;
+
+import Utility.AppConstant;
 
 public class StudentDashboard extends AppCompatActivity {
 
@@ -50,6 +54,17 @@ public class StudentDashboard extends AppCompatActivity {
         inItListener();
 
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences mySharedPreference = getSharedPreferences(getString(R.string.my_preference), Context.MODE_PRIVATE);
+        String parentName  = mySharedPreference.getString(AppConstant.parentName, " ");
+
+        profileName.setText("Hi, " + parentName);
+    }
+
+
 
     public void inItView() {
         myToolbar = findViewById(R.id.tool_bar);

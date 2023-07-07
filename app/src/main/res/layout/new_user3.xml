@@ -169,14 +169,22 @@
                <CheckBox
                         android:id="@+id/check_box"
                         android:layout_width="wrap_content"
-                        android:layout_marginTop="33dp"
-                        android:layout_marginStart="65dp"
-                        android:text="I agree to our times and condition."
+                        android:layout_marginTop="25dp"
+                        android:layout_gravity="center"
+                        android:text="  I agree to the terms and condition."
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         android:layout_height="35dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
 
 
             <androidx.appcompat.widget.AppCompatButton
@@ -184,7 +192,7 @@
                 android:layout_width="320dp"
                 android:layout_height="55dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="5dp"
                 android:background="@drawable/white_button_background"
                 android:gravity="center"
                 android:text="Submit"
