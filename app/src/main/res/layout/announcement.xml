@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="View.Announcement">
+    tools:context=".view.Announcement">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,19 +17,13 @@
         android:background="#F3EFEF"
         android:layout_height="370dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:orientation="horizontal">
-
             <View
                 android:id="@+id/arrow_back"
                 android:layout_width="25dp"
                 android:layout_height="20dp"
-                android:layout_marginStart="34dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="16dp"
                 android:background="@drawable/baseline_arrow_back_24" />
-        </LinearLayout>
 
         <LinearLayout
         android:id="@+id/white_layout"
@@ -151,7 +145,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="11th, May, 2023"
+            android:text="11th, January, 2022"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:textAllCaps="false"
@@ -182,7 +176,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DATE: 18th May 2023."
+            android:text="DATE: 18th January 2022."
             android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
             android:textAllCaps="false"

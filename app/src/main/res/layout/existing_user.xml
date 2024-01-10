@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#45608C"
-    tools:context="View.ExistingUser">
+    android:background="@color/white"
+    tools:context=".view.ExistingUser">
 
     <ScrollView
         android:layout_weight="1"
@@ -18,31 +18,20 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
             <View
                 android:id="@+id/arrow_back"
                 android:layout_width="25dp"
                 android:layout_height="20dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginStart="34dp"
-                android:background="@drawable/baseline_arrow_back_white" />
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/baseline_arrow_back_24" />
 
-
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="13dp"
-                android:layout_marginTop="50dp"
-                android:layout_weight="17" />
-
-
-
-        </LinearLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/school_logo" />
 
 
         <TextView
@@ -50,8 +39,8 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:gravity="center"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textColor="#45608C"
         android:textStyle="bold"
         android:textAllCaps="false"
         android:text="Emafely Divine "/>
@@ -61,65 +50,56 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:gravity="center"
-        android:textColor="@color/white"
+        android:textColor="#45608C"
         android:textStyle="bold"
         android:textAllCaps="false"
         android:text="Treasure School "/>
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:text="User Name "/>
 
-    <EditText
-        android:id="@+id/et_username"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="37dp"
-        android:textColor="@color/white"
-        android:paddingStart="15dp"
-        android:textSize="16sp"
-        android:layout_marginEnd="37dp"
-        android:inputType="text"
-        android:background="@drawable/blue_edittext_background"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="25dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:text="Password"/>
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Username"
+            android:textColorHint="#676666"
+            android:background="@drawable/blue_edittext_background"
+            android:drawableStart="@drawable/user_icon"
+            android:drawablePadding="16dp"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="#3A3B47"
-            android:layout_marginStart="37dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="37dp">
+            app:hintEnabled="false"
+            app:boxStrokeWidth="0dp"
+            app:passwordToggleTint="#B2B2B6">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingStart="15dp"
+                android:layout_height="50dp"
+                android:background="@drawable/blue_edittext_background"
                 android:inputType="textPassword"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:background="@drawable/blue_edittext_background"/>
+                android:hint="Password"
+                android:textColorHint="#676666"
+                android:drawableStart="@drawable/ic_padlock"
+                android:drawablePadding="16dp"
+                android:paddingTop="10dp"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -132,7 +112,7 @@
         android:layout_marginEnd="37dp"
         android:gravity="end"
         android:layout_marginTop="25dp"
-        android:textColor="@color/white"
+        android:textColor="#45608C"
         android:textStyle="bold"
         android:textAllCaps="false"
         android:text="Forget Password?"/>
@@ -149,19 +129,21 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_sign_in"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginTop="20dp"
-        android:textSize="15sp"
-        android:gravity="center"
-        android:textColor="#45608C"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:background="@drawable/white_button_background"
-        android:text="Sign in" />
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="@drawable/button_background_now"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
 
         <LinearLayout
@@ -180,7 +162,7 @@
                 android:textSize="15sp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="15dp"
-                android:textColor="@color/white"
+                android:textColor="#45608C"
                 android:textStyle="bold"
                 android:textAllCaps="false"
                 android:text="Don't have an account?"/>

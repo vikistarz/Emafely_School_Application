@@ -11,90 +11,86 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/school_logo"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
         tools:targetApi="31">
+
         <activity
-            android:name="View.PaymentDetails"
+            android:name=".view.PaymentDetails"
             android:exported="false"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/Theme.EmafelyApp"/>
         <activity
-            android:name="View.ForgetPassword"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="View.AccountInformation"
+            android:name=".view.ForgetPassword"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.PaymentSummary"
+            android:name=".view.AccountInformation"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.MakePayment2"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="View.MakePayment1"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="View.PayGuide"
+            android:name=".view.PaymentSummary"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.ProfilePage"
+            android:name=".view.MakePayment2"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.ResultPage"
+            android:name=".view.MakePayment1"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.Announcement"
+            android:name=".view.PayGuide"
+            android:exported="false"
+            android:theme="@style/Theme.EmafelyApp" />
+
+        <activity
+            android:name=".view.Announcement"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.NewsEvent"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="View.StudentDashboard"
+            android:name=".view.NewsEvent"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.NewUser3"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="View.NewUser2"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="View.NewUser"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="View.ExistingUser"
-            android:exported="false"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="View.MainPage2"
+            android:name=".view.StudentDashboard"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.MainPage1"
+            android:name=".view.NewUser3"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".view.NewUser2"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.HomePage2"
+            android:name=".view.NewUser"
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name="View.HomePage1"
+            android:name=".view.ExistingUser"
+            android:exported="false"
+            android:theme="@style/Theme.EmafelyApp" />
+        <activity
+            android:name=".view.MainPage2"
+            android:exported="false"
+            android:theme="@style/Theme.EmafelyApp" />
+        <activity
+            android:name=".view.MainPage1"
+            android:exported="false"
+            android:theme="@style/Theme.EmafelyApp" />
+        <activity
+            android:name=".view.HomePage2"
+            android:exported="false"
+            android:theme="@style/Theme.EmafelyApp" />
+        <activity
+            android:name=".view.HomePage1"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.EmafelyApp">

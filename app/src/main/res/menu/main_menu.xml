@@ -3,10 +3,6 @@
     android:background="#3B3F4B">
 
 <group android:checkableBehavior="single">
-    <item
-        android:id="@+id/nav_dashboard"
-        android:icon="@drawable/baseline_dashboard_24"
-        android:title="Dashboard"/>
 
     <item
         android:id="@+id/nav_announcement"

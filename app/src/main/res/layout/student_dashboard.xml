@@ -6,9 +6,10 @@
     android:id="@+id/drawer_layout"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="View.StudentDashboard"
+    tools:context=".view.StudentDashboard"
     android:fitsSystemWindows="true"
     tools:openDrawer="">
+
 
    <com.google.android.material.navigation.NavigationView
        android:id="@+id/nav_menu"
@@ -18,6 +19,12 @@
        app:menu="@menu/main_menu2"
        android:layout_gravity="start"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_background"
+        android:orientation="vertical">
+
 
     <ScrollView
         android:layout_weight="1"
@@ -26,8 +33,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         android:background="@color/white"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -50,22 +56,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"/>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:id="@+id/layout_user_profile"
-                android:layout_width="29dp"
-                android:layout_height="29dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginEnd="34dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/circle_dashboard"
-                android:orientation="vertical">
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+               app:cardBackgroundColor="#8E8C8C">
 
                 <View
-                    android:layout_width="10dp"
-                    android:layout_height="14dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="7dp"
-                    android:background="@drawable/p" />
-            </LinearLayout>
+                   android:background="@drawable/baseline_person_24"/>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
@@ -92,12 +99,12 @@
 
 
             <LinearLayout
-                android:id="@+id/layout_check_result"
+                android:id="@+id/layout_announcement_pta"
                 android:layout_width="146dp"
                 android:layout_height="95dp"
                 android:orientation="vertical"
                 android:layout_marginEnd="25dp"
-                android:background="@drawable/rectangle_layout">
+                android:background="@drawable/blue_edittext_background">
 
                 <LinearLayout
                     android:layout_width="45dp"
@@ -108,11 +115,11 @@
                     android:background="@drawable/dashboard_circle_widget">
 
                     <View
-                        android:layout_width="28dp"
-                        android:layout_height="27dp"
+                        android:layout_width="24dp"
+                        android:layout_height="28dp"
                         android:layout_gravity="center"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/check_result"/>
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/baseline_groups_2_24"/>
 
                 </LinearLayout>
 
@@ -123,7 +130,7 @@
                     android:layout_gravity="center"
                     android:textSize="15sp"
                     android:textColor="#000000"
-                    android:text="Check Result"/>
+                    android:text="Announcement"/>
 
             </LinearLayout>
 
@@ -135,7 +142,7 @@
                 android:layout_width="146dp"
                 android:layout_height="95dp"
                 android:orientation="vertical"
-                android:background="@drawable/rectangle_layout">
+                android:background="@drawable/blue_edittext_background">
 
                 <LinearLayout
                     android:layout_width="45dp"
@@ -150,7 +157,7 @@
                         android:layout_height="21dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="12dp"
-                        android:background="@drawable/pay_fees"/>
+                        android:background="@drawable/baseline_money_24"/>
 
                 </LinearLayout>
 
@@ -192,7 +199,7 @@
                 android:layout_height="95dp"
                 android:orientation="vertical"
                 android:layout_marginEnd="25dp"
-                android:background="@drawable/rectangle_layout">
+                android:background="@drawable/blue_edittext_background">
 
                 <LinearLayout
                     android:layout_width="45dp"
@@ -208,15 +215,8 @@
                         android:layout_gravity="center"
                         android:orientation="vertical"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/assignment">
+                        android:background="@drawable/baseline_menu_book_24">
 
-
-                        <View
-                            android:layout_width="10dp"
-                            android:layout_height="11dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginStart="15dp"
-                            android:background="@drawable/book"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -239,7 +239,7 @@
                 android:layout_width="146dp"
                 android:layout_height="95dp"
                 android:orientation="vertical"
-                android:background="@drawable/rectangle_layout">
+                android:background="@drawable/blue_edittext_background">
 
                 <LinearLayout
                     android:layout_width="45dp"
@@ -254,7 +254,7 @@
                         android:layout_height="28dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/announcement"/>
+                        android:background="@drawable/baseline_announcement_24"/>
 
                 </LinearLayout>
 
@@ -292,12 +292,12 @@
 
 
             <LinearLayout
-                android:id="@+id/layout_announcement_pta"
+                android:id="@+id/layout_about_app"
                 android:layout_width="146dp"
                 android:layout_height="95dp"
                 android:orientation="vertical"
                 android:layout_marginEnd="25dp"
-                android:background="@drawable/rectangle_layout">
+                android:background="@drawable/blue_edittext_background">
 
                 <LinearLayout
                     android:layout_width="45dp"
@@ -308,11 +308,11 @@
                     android:background="@drawable/dashboard_circle_widget">
 
                     <View
-                        android:layout_width="24dp"
-                        android:layout_height="21dp"
+                        android:layout_width="28dp"
+                        android:layout_height="26dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/pta_schedule"/>
+                        android:background="@drawable/baseline_support_agent_24"/>
 
                 </LinearLayout>
 
@@ -323,7 +323,7 @@
                     android:layout_gravity="center"
                     android:textSize="15sp"
                     android:textColor="#000000"
-                    android:text="Announcement"/>
+                    android:text="About App"/>
 
             </LinearLayout>
 
@@ -333,7 +333,7 @@
                 android:layout_width="146dp"
                 android:layout_height="95dp"
                 android:orientation="vertical"
-                android:background="@drawable/rectangle_layout">
+                android:background="@drawable/blue_edittext_background">
 
                 <LinearLayout
                     android:layout_width="45dp"
@@ -348,7 +348,7 @@
                         android:layout_height="33dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="4dp"
-                        android:background="@drawable/holidays"/>
+                        android:background="@drawable/baseline_holiday_village_24"/>
 
                 </LinearLayout>
 
@@ -371,122 +371,14 @@
         </LinearLayout>
 
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="17dp"
-                android:layout_weight="1" />
-
-
-
-            <LinearLayout
-                android:id="@+id/layout_faq"
-                android:layout_width="164dp"
-                android:layout_height="95dp"
-                android:orientation="vertical"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/rectangle_layout">
-
-                <LinearLayout
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/dashboard_circle_widget">
-
-                    <LinearLayout
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_gravity="center"
-                        android:orientation="vertical"
-                        android:layout_marginTop="7dp"
-                        android:background="@drawable/faq">
-
-                        <View
-                            android:layout_width="7dp"
-                            android:layout_height="10dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/question_mark"/>
-
-                        <View
-                            android:layout_width="3dp"
-                            android:layout_height="3dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="3dp"
-                            android:background="@drawable/dot"/>
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:layout_gravity="center"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:text="FAQ"/>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/layout_about_app"
-                android:layout_width="146dp"
-                android:layout_height="95dp"
-                android:orientation="vertical"
-                android:background="@drawable/rectangle_layout">
-
-                <LinearLayout
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/dashboard_circle_widget">
-
-                    <View
-                        android:layout_width="28dp"
-                        android:layout_height="26dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        android:background="@drawable/support"/>
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:layout_gravity="center"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:text="About App"/>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="17dp"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
         <View
             android:layout_width="match_parent"
-            android:layout_height="100dp" />
+            android:layout_height="50dp" />
 
 
 
 
     </LinearLayout>
     </ScrollView>
+    </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

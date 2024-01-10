@@ -4,18 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/app_background"
     android:orientation="vertical"
-    tools:context="View.HomePage2">
+    tools:context=".view.HomePage2">
 
-    <ScrollView
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,17 +18,9 @@
                 android:id="@+id/arrow_back"
                 android:layout_width="25dp"
                 android:layout_height="20dp"
-                android:layout_marginStart="34dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
                 android:background="@drawable/baseline_arrow_back_24" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="13dp"
-                android:layout_marginTop="50dp"
-                android:layout_weight="17" />
-
-
         </LinearLayout>
 
         <TextView
@@ -44,7 +28,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="20sp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:textColor="#3B3F4B"
         android:textStyle="bold"
         android:text="Real time experience"/>
@@ -68,45 +52,33 @@
             app:sliderAnimationDuration="600"
             app:sliderAutoCycleDirection="back_and_forth"
             app:sliderIndicatorAnimationDuration="600"
-            app:sliderIndicatorEnabled="true"
+            app:sliderIndicatorEnabled="false"
             app:sliderIndicatorGravity="center_horizontal|bottom"
             app:sliderIndicatorMargin="25dp"
             app:sliderIndicatorOrientation="horizontal"
-            app:sliderIndicatorPadding="3dp"
-            app:sliderIndicatorRadius="3dp"
-            app:sliderIndicatorSelectedColor="#5A5A5A"
-            app:sliderIndicatorUnselectedColor="#FFF"
             app:sliderScrollTimeInSec="1" />
+<!--            app:sliderIndicatorPadding="3dp"-->
+<!--            app:sliderIndicatorRadius="3dp"-->
+    <!--            app:sliderIndicatorSelectedColor="#5A5A5A"-->
+<!--            app:sliderIndicatorUnselectedColor="#FFF"-->
 
-
-    <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-         android:orientation="vertical">
 
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_get_started"
         android:layout_width="275dp"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="40dp"
-        android:textSize="24sp"
+        android:layout_marginTop="70dp"
+        android:textSize="15sp"
         android:textColor="@color/white"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/blue_button_background"
         android:textAllCaps="false"
         android:text="Get Started" />
 
-    </LinearLayout>
-
-
-
-    </LinearLayout>
-    </ScrollView>
 </LinearLayout>
 
 

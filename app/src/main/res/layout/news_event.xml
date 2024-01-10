@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="View.NewsEvent">
+    tools:context=".view.NewsEvent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,19 +24,16 @@
                 android:background="#304E7C"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
+
 
                     <View
                         android:id="@+id/arrow_back"
                         android:layout_width="23dp"
                         android:layout_height="23dp"
-                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="16dp"
                         android:background="@drawable/baseline_arrow_back_white" />
-                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -101,7 +98,7 @@
                             app:sliderAnimationDuration="600"
                             app:sliderAutoCycleDirection="back_and_forth"
                             app:sliderIndicatorAnimationDuration="600"
-                            app:sliderIndicatorEnabled="true"
+                            app:sliderIndicatorEnabled="false"
                             app:sliderIndicatorGravity="center_horizontal|bottom"
                             app:sliderIndicatorMargin="25dp"
                             app:sliderIndicatorOrientation="horizontal"
