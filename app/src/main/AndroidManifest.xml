@@ -15,6 +15,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/school_logo"
+        android:logo="@drawable/school_logo"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
@@ -90,7 +91,7 @@
             android:exported="false"
             android:theme="@style/Theme.EmafelyApp" />
         <activity
-            android:name=".view.HomePage1"
+            android:name=".view.SplashScreenActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.EmafelyApp">

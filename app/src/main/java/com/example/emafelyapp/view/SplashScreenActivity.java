@@ -1,30 +1,30 @@
 package com.example.emafelyapp.view;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
+import android.os.Looper;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.emafelyapp.R;
 
-public class HomePage1 extends AppCompatActivity {
+public class SplashScreenActivity extends AppCompatActivity {
 
+    private static final long SPLASH_DISPLAY_LENGTH = 3000;
     private Button getStartedButton;
     private TextView firstLine, secondLine, thirdLine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_page1);
+        setContentView(R.layout.splash_screen_activity);
 
         inItView();
-
     }
 
     public void inItView() {
@@ -42,17 +42,27 @@ public class HomePage1 extends AppCompatActivity {
         secondLine.startAnimation(animation);
         thirdLine.startAnimation(animation);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                //This method will be executed once the timer is over
-                //Start your app main activity
-                Intent intent = new Intent(HomePage1.this, HomePage2.class);
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                //This method will be executed once the timer is over
+//                //Start your app main activity
+//                Intent intent = new Intent(HomePage1.this, HomePage2.class);
+//                startActivity(intent);
+//                //close this activity
+//                finish();
+//            }
+//        }, 4000);
+
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            try {
+                Intent intent = new Intent(SplashScreenActivity.this, HomePage2.class);
                 startActivity(intent);
-                //close this activity
-                finish();
+                SplashScreenActivity.this.finishAffinity();
+            } catch (NullPointerException npe) {
+                // Handle or log the exception
             }
-        }, 4000);
+        }, SPLASH_DISPLAY_LENGTH);
     }
 
 }

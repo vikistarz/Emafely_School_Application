@@ -8,18 +8,17 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.emafelyapp.R;
+import com.example.emafelyapp.adapters.SliderAdapter;
+import com.example.emafelyapp.utility.SliderData;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
-
-import com.example.emafelyapp.adapters.SliderAdapter;
-import com.example.emafelyapp.utility.SliderData;
 
 public class HomePage2 extends AppCompatActivity {
 
     private Button getStartedButton;
     SliderView mySlider;
-    private  View arrowBack;
+    private View arrowBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,25 +28,27 @@ public class HomePage2 extends AppCompatActivity {
         inItView();
         inItListener();
     }
-    public void inItView(){
+
+    public void inItView() {
         getStartedButton = findViewById(R.id.btn_get_started);
-        arrowBack = findViewById(R.id.arrow_back);
+//        arrowBack = findViewById(R.id.arrow_back);
         mySlider = findViewById(R.id.slider);
         sliderView();
     }
 
 
-    public void inItListener(){
+    public void inItListener() {
         getStartedButton();
-        arrowBack();
+//        arrowBack();
 
     }
+
     private void sliderView() {
         ArrayList<SliderData> mySliderData = new ArrayList<>();
         mySliderData.add(new SliderData(R.drawable.group_nineteen));
         mySliderData.add(new SliderData(R.drawable.group_nineteen));
 
-       SliderAdapter mySliderAdapter = new SliderAdapter(this, mySliderData);
+        SliderAdapter mySliderAdapter = new SliderAdapter(this, mySliderData);
 
         // below method is used to set auto cycle direction in left to
         // right direction you can change according to requirement.
@@ -70,15 +71,15 @@ public class HomePage2 extends AppCompatActivity {
         mySlider.startAutoCycle();
 
     }
-    private void arrowBack() {
-        arrowBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(HomePage2.this, HomePage1.class);
-                startActivity(myIntent);
-            }
-        });
-    }
+//    private void arrowBack() {
+//        arrowBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent myIntent = new Intent(HomePage2.this, SplashScreenActivity.class);
+//                startActivity(myIntent);
+//            }
+//        });
+//    }
 
     private void getStartedButton() {
         getStartedButton.setOnClickListener(new View.OnClickListener() {
